@@ -59,6 +59,7 @@ def run(songs)
     else
       "I don't recognize that"
   end
+end
   
 end
 
