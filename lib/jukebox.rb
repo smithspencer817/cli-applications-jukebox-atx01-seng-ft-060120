@@ -45,9 +45,19 @@ def exit_jukebox
 end
 
 def run(songs)
+  answer = ""
   while answer != "exit" do
     puts "Please enter a command:"
     answer = gets.strip
+    case answer
+    when "play"
+      play
+    when "list"
+      list
+    when "help"
+      help
+    else
+      "I don't recognize that"
   end
   
 end
