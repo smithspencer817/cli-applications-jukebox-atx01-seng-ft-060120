@@ -51,14 +51,15 @@ def run(songs)
     answer = gets.strip
     case answer
     when "play"
-      play
+      play(songs)
     when "list"
-      list
+      list(songs)
     when "help"
       help
     else
       "I don't recognize that"
   end
+  exit_jukebox
 end
   
 end
